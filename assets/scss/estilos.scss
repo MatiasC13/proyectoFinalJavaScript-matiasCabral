@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import 'login';
+@import 'nav';
+@import 'listaDiscos';
+@import 'pantallaUsuario';
+@import 'pantallaCompra';
+@import 'pantallaAdministrador';
+@import 'pantallaAgregarDisco';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5rem;
+
+    & header {
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+    }
+
+    & main {
+        overflow: hidden;
+    }
+}

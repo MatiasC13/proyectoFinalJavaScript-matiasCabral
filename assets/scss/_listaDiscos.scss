@@ -1,0 +1,37 @@
+#discos {
+
+    & div:nth-child(1) {
+        justify-content: center;
+        margin-top: 2rem;
+
+        & h2 {
+            font-size: 3rem;
+            letter-spacing: 0.5rem;
+            font-weight: bolder;
+            text-align: center;
+
+            @media only screen and (max-width:375px) {
+                letter-spacing: normal;
+            }
+        }
+    }
+
+    & .discos {
+        display: flex;
+        justify-content: center;
+    }
+
+    & .titulo-ventas {
+        margin: 2rem;
+        letter-spacing: 0.5rem;
+        font-size: 3rem;
+        font-weight: bolder;
+        justify-content: center;
+    }
+
+    & p {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}

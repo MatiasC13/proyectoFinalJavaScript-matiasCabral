@@ -1,0 +1,82 @@
+[{
+        "imagen": "assets/img/testimonium.jpg",
+        "titulo": "Testimonium",
+        "artista": "Lacrimosa",
+        "discografica": "Hall of Sermon",
+        "anio": 2017,
+        "copias": 600,
+        "precio": 1000
+    },
+    {
+        "imagen": "assets/img/hoffnung.jpg",
+        "titulo": "Hoffnung",
+        "artista": "Lacrimosa",
+        "discografica": "Hall of Sermon",
+        "anio": 2015,
+        "copias": 700,
+        "precio": 1000
+    },
+    {
+        "imagen": "assets/img/revolution.jpg",
+        "titulo": "Revolution",
+        "artista": "Lacrimosa",
+        "discografica": "Hall of Sermon",
+        "anio": 2012,
+        "copias": 600,
+        "precio": 900
+    },
+    {
+        "imagen": "assets/img/lichgestalt.jpg",
+        "titulo": "Lichtgestalt",
+        "artista": "Lacrimosa",
+        "discografica": "Hall of Sermon",
+        "anio": 2005,
+        "copias": 400,
+        "precio": 600
+    },
+    {
+        "imagen": "assets/img/echos.jpg",
+        "titulo": "Echos",
+        "artista": "Lacrimosa",
+        "discografica": "Hall of Sermon",
+        "anio": 2002,
+        "copias": 300,
+        "precio": 500
+    },
+    {
+        "imagen": "assets/img/live.jpg",
+        "titulo": "Live",
+        "artista": "Lacrimosa",
+        "discografica": "Hall of Sermon",
+        "anio": 1998,
+        "copias": 100,
+        "precio": 400
+    },
+    {
+        "imagen": "assets/img/stille.jpg",
+        "titulo": "Stille",
+        "artista": "Lacrimosa",
+        "discografica": "Hall of Sermon",
+        "anio": 1997,
+        "copias": 99,
+        "precio": 300
+    },
+    {
+        "imagen": "assets/img/einsamkeit.jpg",
+        "titulo": "Einsamkeit",
+        "artista": "Lacrimosa",
+        "discografica": "Hall of Sermon",
+        "anio": 1992,
+        "copias": 50,
+        "precio": 200
+    },
+    {
+        "imagen": "assets/img/angst.jpg",
+        "titulo": "Angst",
+        "artista": "Lacrimosa",
+        "discografica": "Hall of Sermon",
+        "anio": 1991,
+        "copias": 1,
+        "precio": 100
+    }
+]

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- TOASTIFY CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <!-- Logo -->
+    <link rel="shortcut icon" href="assets/img/logo.png">
+
+    <title>Discos Shop</title>
+</head>
+
+<body>
+
+    <header class="pantalla user admin">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <div class="pantalla user carrito">
+                <a class="navbar-brand" href="#"><img src="assets/img/carrito-de-compras.png"><span
+                        id="contador">0</span></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" id="btnTop" href="#">Actualizar</a></li>
+                    <li class="nav-item"><a class="nav-link" id="btnCerrarSesion" href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LOG IN -->
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-xs-12 offset-md-3 col-md-6 offset-md-3">
+                    <form class="pantalla logIn">
+                        <div class="row encabezadoLogin">
+                            <img src="assets/img/logo.png" class="col-xs-3">
+                            <h1 class="col-xs-9">Discos Shop</h1>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmail">E-mail</label>
+                            <input type="email" class="form-control" id="txtEmail" placeholder="usuario@usuario.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPassword">Contraseña</label>
+                            <input type="password" class="form-control" id="txtPassword" placeholder="123456">
+                        </div>
+                        <button type="button" id="iniciarSesion" class="btn btn-dark">Iniciar sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Área Administrador -->
+
+        <div id="administrador" class="pantalla admin container-fluid">
+
+            <div class="row">
+                <h1 class="col-xs-12">Administrador</h1>
+            </div>
+            <div class="row">
+                <input type="button" id="btnOrdenarCantidad" class="btn btn-dark col-xs-12 col-lg-2"
+                    value="Ordenar por cantidad">
+                <input type="button" id="btnPocoStock" class="btn btn-dark col-xs-12 col-md-2" value="Poco Stock">
+                <input type="button" id="btnAgotados" class="btn btn-dark col-xs-12 col-md-2" value="Agotados">
+                <input type="button" id="btnVentasFecha" class="btn btn-dark col-xs-12 col-md-2" value="Mostrar Ventas">
+                <input type="button" id="btnAgregarDisco" class="btn btn-dark col-xs-12 col-md-2" value="Agregar Disco">
+            </div>
+
+            <div class="row pantalla form">
+                <div class="col-xs-12 offset-md-3 col-md-6">
+                    <h2>Agregar Disco</h2>
+                    <form action="#" method="post" autocomplete="off" id="formularioDatos">
+                        <!-- Imágen -->
+                        <div class="form-group">
+                            <input type="file" name="imagen" id="img" class="caja-input">
+                        </div>
+                        <!-- Título -->
+                        <div class="form-group">
+                            <label for="txtTitulo">Título</label>
+                            <input type="text" name="titulo" id="txtTitulo" required class="form-control">
+                        </div>
+                        <!-- Artista -->
+                        <div class="form-group">
+                            <label for="txtArtista">Artista:</label>
+                            <input type="text" name="artista" id="txtArtista" required class="form-control">
+                        </div>
+                        <!-- Discográfica -->
+                        <div class="form-group">
+                            <label for="txtDiscografica">Discográfica:</label>
+                            <input type="text" name="discografica" id="txtDiscografica" required class="form-control">
+                        </div>
+                        <!-- Año -->
+                        <div class="form-group">
+                            <label for="numAnio">Año</label>
+                            <input type="number" name="anio" id="numAnio" required min="1" class="form-control">
+                        </div>
+                        <!-- Copias -->
+                        <div class="form-group">
+                            <label for="numCopia">Cantidad de copias:</label>
+                            <input type="number" name="copias" id="numCopia" required min="1" class="form-control">
+                        </div>
+                        <!-- Precio -->
+                        <div class="form-group">
+                            <label for="numPrecio">Precio:</label>
+                            <input type="number" name="precio" id="numPrecio" required min="1" class="form-control">
+                        </div>
+                        <!-- Enviar Datos -->
+                        <input type="submit" id="btnEnviar" class="btn btn-dark" value="Agregar">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Área Usuario -->
+
+        <div class="container-fluid pantalla user ">
+            <div class="row usuario">
+                <div class="encabezadoUsuario col-xs-12 col-md-7">
+                    <img src="assets/img/logo.png">
+                    <h1>Discos Shop</h1>
+                </div>
+
+                <!-- Buscar Disco -->
+
+                <div class="col-xs-12 col-md-5">
+                    <input type="text" name="buscar" class="form-control" id="txtBuscar" placeholder="título del disco">
+                    <input type="button" id="btnBuscar" class="btn btn-dark btn-block" value="Buscar por título">
+
+                    <!-- Discos Ordenados Por Precio -->
+
+                    <input type="button" id="btnOrdenarPrecio" value="Ordenar por precio"
+                        class="btn btn-dark btn-block">
+                </div>
+            </div>
+        </div>
+
+        <!-- Listado de Discos -->
+
+        <div class="pantalla disco container" id="discos"></div>
+
+        <!-- Carrito -->
+
+        <div class="container pantalla car" id="divCarrito"></div>
+    </main>
+
+    <!-- LUXON -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.1/build/global/luxon.min.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/clases.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+    <!-- POPPER -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>

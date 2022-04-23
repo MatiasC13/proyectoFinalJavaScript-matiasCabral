@@ -1,0 +1,46 @@
+.form>div {
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    & .caja-input {
+        width: 100%;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        color: #343A40;
+        background-color: #ffffff;
+        box-shadow: 5px 5px 10px #ced4da;
+        outline: none;
+    }
+
+    & ::-webkit-file-upload-button {
+        padding: 0.5rem;
+        color: #ffffff;
+        border: thin;
+        background-color: #343A40;
+        outline: none;
+        cursor: pointer;
+    }
+
+    & .form-control:focus {
+        border-color: rgb(206, 212, 218);
+        box-shadow: 0 0 5px rgba(52, 58, 64, 1) !important;
+    }
+
+    & label {
+        font-weight: bold;
+    }
+
+    & .btn {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,36 @@
+.usuario {
+    display: flex !important;
+    align-items: center !important;
+    margin-top: 3rem;
+
+    & .encabezadoUsuario {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        @media only screen and (max-width:768px) {
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        & img {
+            width: 100%;
+            max-width: 90px;
+        }
+
+        & h1 {
+            font-weight: bold;
+            font-size: 3.1rem;
+            margin-left: 1rem;
+        }
+    }
+
+    & #txtBuscar:focus {
+        border-color: rgb(206, 212, 218);
+        box-shadow: 0 0 5px rgba(52, 58, 64, 1) !important;
+    }
+
+    & .btn {
+        margin-top: 1rem;
+    }
+}
